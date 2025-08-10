@@ -21,7 +21,7 @@ def download_video():
             print(f"Скачиваем видео с {video_url}...")
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([video_url])
-            print("Видео успешно скачано!")
+            print("🍓 Видео успешно скачано!")
         except Exception as e:
             print(f"Ошибка при скачивании видео: {e}")
     except KeyboardInterrupt:
